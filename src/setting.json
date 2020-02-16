@@ -1,0 +1,29 @@
+{
+  "locale": "en",
+  "server": {
+    "url": "http://localhost:7000",
+    "base": "detra",
+    "img": "static/avatars",
+    "prizeImg": "static/prizes",
+    "ext": ".png",
+    "wsurl": "ws://localhost:7000/detra/ws"
+  },
+  "travelServer": {
+    "url": "http://localhost:5000",
+    "base": "tripanion"
+  },
+  "avatars": [
+    "gopher",
+    "dog",
+    "bomb",
+    "missile",
+    "toro",
+    "ikura",
+    "gopher_paris"
+  ],
+  "prizes": [
+    "shakehands",
+    "sword",
+    "book"
+  ]
+}

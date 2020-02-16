@@ -1,0 +1,23 @@
+
+.standard-modal .ant-modal-content {
+  background-color: lightyellow;
+  color: coral;
+}
+
+.standard-modal .ant-modal-header {
+  background-color: lightyellow;
+  border-bottom: 1px solid lightyellow;
+}
+
+.standard-modal .ant-modal-title {
+  color: coral;
+}
+
+.standard-modal .ant-modal-close {
+  color: violet;
+}
+
+.standard--modal .ant-modal-footer {
+  background-color: lightyellow;
+  border-top: 1px solid lightyellow;
+}
