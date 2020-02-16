@@ -4,7 +4,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import {
   faUser, faTasks, faCogs, faDoorOpen, faFilter,
   faEdit, faTrashAlt, faCommentDots, faAward, 
-  faPlaneDeparture, faHotel, faCreditCard, faListAlt,
+  faPlane, faPlaneDeparture, faHotel, faCreditCard, faListAlt, faVideo,
 } from "@fortawesome/free-solid-svg-icons"
 import LoginContainer from "../containers/LoginContainer"
 import MainContainer from "../containers/MainContainer"
@@ -22,7 +22,7 @@ import TravelApiCommon from "../libs/apis/travelApiCommon"
 library.add(
   faUser, faTasks, faCogs, faDoorOpen, faFilter,
   faEdit, faTrashAlt, faCommentDots, faAward, 
-  faPlaneDeparture, faHotel, faCreditCard, faListAlt,
+  faPlane, faPlaneDeparture, faHotel, faCreditCard, faListAlt, faVideo,
 )
 ApplicationSetting.init(settingJson)
 I18n.setLocale(ApplicationSetting.getLocale())

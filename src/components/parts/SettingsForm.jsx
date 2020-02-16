@@ -61,7 +61,7 @@ class SettingsForm extends Component {
         dataIndex: "name",
         key: "name",
         render: (name) => {
-          return <span style={{color: "lemonchiffon"}}>{name}</span>
+          return <span style={{color: "coral"}}>{name}</span>
         }
       },
       {
@@ -69,7 +69,7 @@ class SettingsForm extends Component {
         key: "avatar",
         render: (user) => (
           <div>
-            <Avatar avatar={user.avatar} size={"20px"} /> <span style={{color: "lemonchiffon"}}>{user.avatar}</span>
+            <Avatar avatar={user.avatar} size={"20px"} /> <span style={{color: "coral"}}>{user.avatar}</span>
           </div>
         ),
       },

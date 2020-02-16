@@ -1,10 +1,15 @@
-    import React, { Component } from "react"
-    import I18n from "../../libs/common/i18n"
-    import { Table, DatePicker, Col, Row, Input, Button, Spin } from "antd"
-    const { RangePicker } = DatePicker
+import React, { Component } from "react"
+import I18n from "../../libs/common/i18n"
+import { Table, DatePicker, Col, Row, Input, Button, Spin } from "antd"
+import FlightTicketCard from "./FlightTicketCard"
+import styled from "styled-components"
 
-    //import FlightTicket from "../../libs/models/flightTicket"
-
+const Label = styled.h4`
+  color: coral;
+  margin-top: 10px;
+  margin-left: 10px;
+`
+const { RangePicker } = DatePicker
 
 class FlightSearchForm extends Component {
     constructor(props) {
@@ -30,7 +35,7 @@ class FlightSearchForm extends Component {
         <div>
         <Spin spinning={isSearchingFlight}>
             <Col>
-                <h3>Search Condition:</h3>
+                <Label>Search Condition:</Label>
                 <Row style={{ marginTop: "10px" }}>
                     <Col span={6} style={{ marginRight: "5px" }}>
                         <Input
@@ -61,12 +66,15 @@ class FlightSearchForm extends Component {
                         </Button>
                     </Col>
                 </Row>
-                <h3 style={{marginTop:"10px"}}>Search Results:</h3>
-                 <Row>
+                <Label>Search Results:</Label>
+                    <Row>
+                    {/* { Object.keys(flightTickets).map((key) => {
+                        return (<FlightTicketCard flightTicket={flightTickets[key]}/>)
+                    })} */}
                     <Table
-                    rowKey={record => record.id}
-                    columns={this.getFlightTicketTableColumns()} 
-                    dataSource={flightTickets} 
+                        rowKey={record => record.id}
+                        columns={this.getFlightTicketTableColumns()} 
+                        dataSource={flightTickets} 
                     />
                 </Row>
             </Col>
@@ -172,4 +180,4 @@ class FlightSearchForm extends Component {
 
 
 
-    export default FlightSearchForm
+export default FlightSearchForm

@@ -72,8 +72,11 @@ const messagesEn = {
   "ボードの削除に失敗しました": "Failed to delete board",
   "Prize": "Prize",
   "Failed to search flight tickets" : "Failed to search flight tickets",
+  // Menu Tabs
   "Flight": "Flight",
+  "Flight ticket search & book" : "Flight ticket search & book",
   "Hotel": "Hotel",
+  "Hotel search & book" : "Hotel search & book",
   "Payment" : "Payment",
   "History": "History",
   //FlightSearch form
@@ -90,6 +93,9 @@ const messagesEn = {
   "Back Time": "Back Time",
   "Back Price": "Back Price",
   "Total Price": "Total Price",
+  // Ticket Card
+  "Book": "Book",
+  
 }
 
 export default class I18n {

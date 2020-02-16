@@ -27,7 +27,7 @@ class LoginForm extends Component {
         <Col>
           <Row>
             <div style={{ fontSize: "32px" }}>
-              <img src="images/title.png" />
+              <img src="images/title-logo.png" />
             </div>
           </Row>
           <Row style={{ marginTop: "10px" }}>
